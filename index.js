@@ -86,3 +86,37 @@ console.log(num1);
 //output:[8, 5, 4, 3, 2, 2, 21]
 
 
+//palindrome program
+let num=2345;
+let b=num;
+let temp;
+let a;
+while(num>0)
+{
+a=num%10;
+num=parseInt(num/10);
+temp=temp*10+a;
+}
+if(temp==b)
+{
+  console.log("yes");
+}
+else
+{
+  console.log("No");
+}
+//output:Yes/No based on whether it is a palindrome
+
+
+var obj2 = {
+  key1: "val1",
+  key2: function() {
+    return {
+      a: "this is a val",
+      b:28
+    }
+  }
+};
+
+console.log(obj2.key2().a);
+console.log(obj2.key1);
