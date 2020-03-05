@@ -118,5 +118,5 @@ var obj2 = {
   }
 };
 
-console.log(obj2.key2().a);
+console.log(obj2.key2().a,obj2.key2().b);
 console.log(obj2.key1);
