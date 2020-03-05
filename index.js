@@ -60,14 +60,29 @@ console.log(num1.reverse());
 //reverse the Array
 //output:[9, 5, 4, 3, 2, 2, 1]
 
-let arr11=arr9.concat(arr1);
+let arr11=num1.concat(arr1);
 console.log(arr11);
 //concatinates two strings
 //output:[9, 5, 4, 3, 2, 2, 1, "a", "b", "c", 23, "murali"]
 
-
-console.log(num1.pop());
+num1.pop();
 console.log(num1)
+//pops the last element from the Array
+//output:[9, 5, 4, 3, 2, 2] (1 is popped out from the array)
 
+num1.push(21);
+console.log(num1);
+//pushes the element to the last of the Array
+//output:[9, 5, 4, 3, 2, 2, 21]
+
+num1.shift();
+console.log(num1);
+//removes the first element from the Array
+//output:[5, 4, 3, 2, 2, 21]
+
+num1.unshift(8);
+console.log(num1);
+//appends the given element to the first of the Array
+//output:[8, 5, 4, 3, 2, 2, 21]
 
 
