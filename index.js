@@ -19,6 +19,7 @@ console.log(arr2);
 
 let arr3=arr1.filter(index=>isNaN(index)===false)
 console.log(arr3);
+console.log("#");
 //filter:filters the given array based on the condition
 //output:[23]
 
@@ -52,7 +53,7 @@ console.log(arr8);
 //splice cuts the elements from original array,it changes the original Array
 //output:["a", "b", "c"]
 
-console.log(num1.sort());
+console.log(num1.sort((a,b)=>a-b));
 //sorting the Array
 //output:[1, 2, 2, 3, 4, 5, 9]
 
@@ -171,3 +172,64 @@ let person = prompt("please Enter your name");
             }
         console.log(obj4);
 */
+
+//----------------------------------
+const arr=[9,8,7,6,5];
+const objarr=[{name:'1',age:21},{name:'3'},{name:'2'}];
+
+
+for (let i=0;i<arr.length;i++)
+{
+  console.log(arr[i]);
+}
+for(let a of objarr)
+{
+  console.log(a);
+}
+arr.forEach((item,index,arr1)=>
+{
+  console.log(item);
+  console.log(index);
+  console.log(arr1);
+}
+)
+
+
+
+const temp=[];
+objarr.forEach((item)=>
+{
+  temp.push(item.name);
+})
+temp.forEach((index)=>
+{
+console.log(temp);
+})
+
+
+
+const test=[];
+objarr.map((item,index,arr)=>
+{
+  // console.log(item);
+  // return item;
+  test.push(item.name);
+})
+test.forEach((item)=>
+{
+console.log(item);
+})
+
+const t1=objarr.find((item)=>item.name==='1')
+console.log(t1);
+
+const objarr1=['murali','mur','mithra','kuppan'];
+objarr1.sort();
+console.log(objarr1);
+console.log(objarr1);
+
+
+let [man,man1]=objarr1;
+console.log(man);
+console.log(man1);s
+
